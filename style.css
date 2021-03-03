@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f2e9ff;
+  color: black;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  
+}
+
+
+.quote-container{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30%;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgbs(255,255,255,0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0,0,0.2);
+  
+
+}
+
+
+.quote-text{
+  font-size: 2.75rem;
+
+}
+
+
+
+.fa-quote-left{
+  font-size: 2rem;
+}
+
+.quote-author{
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+.button-container{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: whitesmoke;
+  padding: 0.5rem 1.8rem;
+  outline: none;
+  box-shadow: 0 0.3rem rgba(0, 0, 0, 0.65);
+
+}
+
+button:hover{
+  filter: brightness(120%);
+}
+
+button:active{
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba;
+  box-shadow: 0 0.3rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover{
+  color: #3881f3;
+}
+
+.fa-twitter{
+  font-size: 1rem;;
+}
+  
+
+.list-container{
+  display: inline-block;
+}
+
+
+.hide-list {
+  display: none;
+}
+
+#category-btn:hover{
+  display: block;
+}
+
+.show-list{
+  display: block;
+  
+}
+li{
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+  .quote-container{
+    margin: auto 10px;
+    
+  }
+
+  .quote-text{
+    font-size: 2.5rem;
+  }
+}
