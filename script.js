@@ -99,6 +99,7 @@ async function getTypes(){
 function displayCategories(arr){
     for(i in quoteCategory){
         var test = document.createElement("li");
+        test.classList.add('inactive-li');
         test.innerText = arr[i].name;
         catList.appendChild(test);
     }
@@ -106,10 +107,21 @@ function displayCategories(arr){
 
 
 function filterByCategory(){
+    t = document.getElementById("category-list").childNodes;
+    //t.classList.toggle('active-li');
+    for(i = 1; i < t.length; i++){
+        console.log(t[i]);
+        t[i].classList.remove('active-li');
+    }
+    
     var target = event.target;
     currentCat = target.innerText;
+    target.classList.toggle('active-li');
+    
+    console.log(target);
     
 }
+
 
 
 
